@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 /**
  * Created by laihaotao on 2015/8/4.
+ * 这个类只要用来构建数据表
  */
 public class MyDatabaseHelper extends SQLiteOpenHelper{
 
@@ -18,13 +19,13 @@ public class MyDatabaseHelper extends SQLiteOpenHelper{
             "id integer primary key autoincrement," +
             "city_name text," +
             "city_code text," +
-            "province_id )";
+            "province_id integer)";
 
     public static final String CREATE_COUNTRY = " create table Country (" +
             "id integer primary key autoincrement," +
             "country_name text," +
             "country_code text," +
-            "city_id )";
+            "city_id integer)";
 
     public MyDatabaseHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);

@@ -2,6 +2,7 @@ package com.eric_lai.coolweather.model;
 
 /**
  * Created by laihaotao on 2015/8/4.
+ * 省的实体类辅助数据库操作
  */
 public class Province {
 

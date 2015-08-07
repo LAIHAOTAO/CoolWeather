@@ -7,6 +7,7 @@ import java.net.URL;
 
 /**
  * Created by laihaotao on 2015/8/5.
+ * http工具类
  */
 public class HttpUtil {
 
@@ -21,7 +22,8 @@ public class HttpUtil {
                     connection.setRequestMethod("GET");
                     connection.setConnectTimeout(8000);
                     connection.setReadTimeout(8000);
-                    BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+                    BufferedReader reader = new BufferedReader(
+                            new InputStreamReader(connection.getInputStream()));
                     StringBuilder response = new StringBuilder();
                     String line;
                     while((line = reader.readLine()) != null){

@@ -2,13 +2,14 @@ package com.eric_lai.coolweather.model;
 
 /**
  * Created by laihaotao on 2015/8/4.
+ * 城市的实体类，辅助数据库操作
  */
 public class City {
 
-    private String cityeName;
+    private int id;
+    private String cityName;
     private String cityCode;
     private int provinceId;
-    private int id;
 
     public void setId(int id){
         this.id = id;
@@ -16,16 +17,16 @@ public class City {
     public int getId(){
         return id;
     }
-    public void setCityeName(String cityeName){
-        this.cityeName = cityeName;
+    public void setCityName(String cityName){
+        this.cityName = cityName;
     }
-    public String getcityeName(){
-        return cityeName;
+    public String getCityName(){
+        return cityName;
     }
-    public void setcityCode(String cityCode){
+    public void setCityCode(String cityCode){
         this.cityCode = cityCode;
     }
-    public String getcityCode(){
+    public String getCityCode(){
         return cityCode;
     }
     public void setProvinceId(int provinceId){
